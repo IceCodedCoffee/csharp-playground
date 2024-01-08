@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Generic class def", "01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Typeparameter constraints", "02. Typeparameter constraints\02. Typeparameter constraints.csproj", "{AD5253FE-79BB-4ADF-B844-ED8382118EA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Nullable types", "03. Nullable types\03. Nullable types.csproj", "{C136CD83-BFBA-4F88-9D3B-A44FB3C8AB97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD5253FE-79BB-4ADF-B844-ED8382118EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD5253FE-79BB-4ADF-B844-ED8382118EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD5253FE-79BB-4ADF-B844-ED8382118EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C136CD83-BFBA-4F88-9D3B-A44FB3C8AB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C136CD83-BFBA-4F88-9D3B-A44FB3C8AB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C136CD83-BFBA-4F88-9D3B-A44FB3C8AB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C136CD83-BFBA-4F88-9D3B-A44FB3C8AB97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
