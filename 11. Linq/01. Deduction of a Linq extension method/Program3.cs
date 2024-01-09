@@ -2,7 +2,7 @@
 {
     internal class Program3
     {
-        static void Main3(string[] args)
+        static void Main(string[] args)
         {
             string[] arr = ["Peter", "Uwe", "Willi", "Udo", "Gernot"];
 
