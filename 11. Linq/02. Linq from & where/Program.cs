@@ -8,20 +8,21 @@ namespace _02._Linq_query_operators
         {
             Customer[] customers = Service.GetCustomers();
 
-            var query = from customer in customers
-                        where customer.Name.Length < 6
-                        select new { customer.Name, customer.City };
+            var query1 = from customer in customers
+                         where customer.Name.Length < 6
+                         select new { customer.Name, customer.City };
 
-            foreach (var item in query)
-                Console.WriteLine($"Name: {item.Name}, Ort: {item.City}");
+            foreach (var item in query1)
+                Console.WriteLine($"query1: Name: {item.Name}, Ort: {item.City}");
+            Console.WriteLine();
 
 
             var query2 = customers.Where(customer => customer.Name.Length < 6);
 
             foreach (var item in query2)
-                Console.WriteLine($"Name: {item.Name}, Ort: {item.City}");
-
+                Console.WriteLine($"query2: Name: {item.Name}, Ort: {item.City}");
             Console.WriteLine();
+
             // -----------------------------------------------------------------------------------------------------
 
             var query3 = from customer in customers
@@ -31,7 +32,8 @@ namespace _02._Linq_query_operators
                          select new { order.OrderID, order.ProductID };
 
             foreach (var item in query3)
-                Console.WriteLine($"OrderID: {item.OrderID}, ProductID: {item.OrderID} ");
+                Console.WriteLine($"query3: OrderID: {item.OrderID}, ProductID: {item.OrderID} ");
+            Console.WriteLine();
 
 
             var query4 = customers
@@ -41,9 +43,9 @@ namespace _02._Linq_query_operators
                         .Select(order => new { order.OrderID, order.ProductID });
 
             foreach (var item in query4)
-                Console.WriteLine($"OrderID: {item.OrderID}, ProductID: {item.OrderID} ");
-
+                Console.WriteLine($"query4: OrderID: {item.OrderID}, ProductID: {item.OrderID} ");
             Console.WriteLine();
+
             // -----------------------------------------------------------------------------------------------------
 
             var query5 = from cust in customers
@@ -51,16 +53,18 @@ namespace _02._Linq_query_operators
                          select cust.Name;
 
             foreach (var item in query5)
-                Console.WriteLine(item);
+                Console.WriteLine("query5:" + item);
+            Console.WriteLine();
+
 
             var query6 = customers
                          .Where(cust => cust.City == Cities.Aachen)
                          .Select(c => c.Name);
 
             foreach (var item in query6)
-                Console.WriteLine(item);
-
+                Console.WriteLine("query6:" + item);
             Console.WriteLine();
+
             // -----------------------------------------------------------------------------------------------------
 
             Order[] orders = Service.GetOrders();
@@ -70,16 +74,18 @@ namespace _02._Linq_query_operators
                          select order.OrderID;
 
             foreach (var item in query7)
-                Console.WriteLine(item);
+                Console.WriteLine("query7:" + item);
+            Console.WriteLine();
+
 
             var query8 = orders
-                        .Where(order => order.Quantity > 3 && order.Shipped == false)
-                        .Select(ord => ord.OrderID);
+                         .Where(order => order.Quantity > 3 && order.Shipped == false)
+                         .Select(ord => ord.OrderID);
 
             foreach (var item in query8)
-                Console.WriteLine(item);
-
+                Console.WriteLine("query8:" + item);
             Console.WriteLine();
+
             // -----------------------------------------------------------------------------------------------------
 
             var query9 = orders
@@ -87,7 +93,8 @@ namespace _02._Linq_query_operators
                          .Select(order => new { order.OrderID, order.ProductID, order.Quantity });
 
             foreach (var item in query9)
-                Console.WriteLine($"{item.OrderID,-5}{item.ProductID,-5}{item.Quantity}");
+                Console.WriteLine($"query9: {item.OrderID,-5}{item.ProductID,-5}{item.Quantity}");
+            Console.WriteLine();
         }
     }
 }

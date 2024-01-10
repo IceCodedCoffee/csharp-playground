@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Deduction of a Linq extension method", "01. Deduction of a Linq extension method\01. Deduction of a Linq extension method.csproj", "{5B9F4360-EE49-4A6E-932E-807F03406184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Linq from & where", "02. Linq query operators\02. Linq from & where.csproj", "{0660B928-6275-4310-A626-019D6E7E624C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Linq from & where", "02. Linq from & where\02. Linq from & where.csproj", "{768448B2-FE71-48DE-8375-A0F0518061DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{5B9F4360-EE49-4A6E-932E-807F03406184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B9F4360-EE49-4A6E-932E-807F03406184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B9F4360-EE49-4A6E-932E-807F03406184}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0660B928-6275-4310-A626-019D6E7E624C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0660B928-6275-4310-A626-019D6E7E624C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0660B928-6275-4310-A626-019D6E7E624C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0660B928-6275-4310-A626-019D6E7E624C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768448B2-FE71-48DE-8375-A0F0518061DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768448B2-FE71-48DE-8375-A0F0518061DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768448B2-FE71-48DE-8375-A0F0518061DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768448B2-FE71-48DE-8375-A0F0518061DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
