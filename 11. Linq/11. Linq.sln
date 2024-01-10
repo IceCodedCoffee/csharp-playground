@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Deduction of a Linq extension method", "01. Deduction of a Linq extension method\01. Deduction of a Linq extension method.csproj", "{5B9F4360-EE49-4A6E-932E-807F03406184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Linq query operators", "02. Linq query operators\02. Linq query operators.csproj", "{0660B928-6275-4310-A626-019D6E7E624C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Linq from & where", "02. Linq query operators\02. Linq from & where.csproj", "{0660B928-6275-4310-A626-019D6E7E624C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
