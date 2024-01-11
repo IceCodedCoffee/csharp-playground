@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Deduction of a Linq extension method", "01. Deduction of a Linq extension method\01. Deduction of a Linq extension method.csproj", "{5B9F4360-EE49-4A6E-932E-807F03406184}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Linq from & where", "02. Linq from & where\02. Linq from & where.csproj", "{768448B2-FE71-48DE-8375-A0F0518061DB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Select & sort", "03. Select & sort\03. Select & sort.csproj", "{A9EF0840-D46F-4AC0-B597-F4D93545B089}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Group & join", "04. Group & join\04. Group & join.csproj", "{11EC8618-F182-4102-9502-BED695317079}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. from & where", "02. from & where\02. from & where.csproj", "{DC77415C-E00B-46BB-A010-99440F1F67CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{5B9F4360-EE49-4A6E-932E-807F03406184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B9F4360-EE49-4A6E-932E-807F03406184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B9F4360-EE49-4A6E-932E-807F03406184}.Release|Any CPU.Build.0 = Release|Any CPU
-		{768448B2-FE71-48DE-8375-A0F0518061DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{768448B2-FE71-48DE-8375-A0F0518061DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{768448B2-FE71-48DE-8375-A0F0518061DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{768448B2-FE71-48DE-8375-A0F0518061DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9EF0840-D46F-4AC0-B597-F4D93545B089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9EF0840-D46F-4AC0-B597-F4D93545B089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9EF0840-D46F-4AC0-B597-F4D93545B089}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{11EC8618-F182-4102-9502-BED695317079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11EC8618-F182-4102-9502-BED695317079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11EC8618-F182-4102-9502-BED695317079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC77415C-E00B-46BB-A010-99440F1F67CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC77415C-E00B-46BB-A010-99440F1F67CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC77415C-E00B-46BB-A010-99440F1F67CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC77415C-E00B-46BB-A010-99440F1F67CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

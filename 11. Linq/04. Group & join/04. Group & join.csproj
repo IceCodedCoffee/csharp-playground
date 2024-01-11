@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <Reference Include="Musterdaten">
-      <HintPath>..\02. Linq from &amp; where\Musterdaten.dll</HintPath>
+      <HintPath>..\02. from &amp; where\Musterdaten.dll</HintPath>
     </Reference>
   </ItemGroup>
 
