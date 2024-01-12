@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. from & where", "02. fro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Set-operators", "05. Set-operators\05. Set-operators.csproj", "{FA719090-11EA-4E70-BC00-6DB47F199D2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Aggregate-operators", "06. Aggregate-operators\06. Aggregate-operators.csproj", "{C0A21263-7831-40DB-A1C8-509E0EA5E336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Aggregate-operators", "06. Aggregate-operators\06. Aggregate-operators.csproj", "{C0A21263-7831-40DB-A1C8-509E0EA5E336}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Quantify-, Take- & Skip-operators", "07. Quantify, Take & Skip-operators\07. Quantify-, Take- & Skip-operators.csproj", "{B872F4A7-00B5-445B-914D-03B1FAE2368F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{C0A21263-7831-40DB-A1C8-509E0EA5E336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0A21263-7831-40DB-A1C8-509E0EA5E336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0A21263-7831-40DB-A1C8-509E0EA5E336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B872F4A7-00B5-445B-914D-03B1FAE2368F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B872F4A7-00B5-445B-914D-03B1FAE2368F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B872F4A7-00B5-445B-914D-03B1FAE2368F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B872F4A7-00B5-445B-914D-03B1FAE2368F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
