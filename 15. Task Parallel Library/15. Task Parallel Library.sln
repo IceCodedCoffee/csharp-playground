@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Tasks with return value
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Passing data to a task", "03. Passing data to a task\03. Passing data to a task.csproj", "{F6778356-96D0-404F-8B92-66A6CBE9C870}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Waiting for the end of a task", "04. Waiting for the end of a task\04. Waiting for the end of a task.csproj", "{7D94A325-0AE3-496C-919D-F01127758FAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D94A325-0AE3-496C-919D-F01127758FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D94A325-0AE3-496C-919D-F01127758FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D94A325-0AE3-496C-919D-F01127758FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D94A325-0AE3-496C-919D-F01127758FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
