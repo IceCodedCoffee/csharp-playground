@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Passing data to a task"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Waiting for the end of a task", "04. Waiting for the end of a task\04. Waiting for the end of a task.csproj", "{7D94A325-0AE3-496C-919D-F01127758FAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Cancelling a task from outside", "05. Cancelling a task from outside\05. Cancelling a task from outside.csproj", "{C5B010AB-CD7F-4034-8A4A-610259220461}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7D94A325-0AE3-496C-919D-F01127758FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D94A325-0AE3-496C-919D-F01127758FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D94A325-0AE3-496C-919D-F01127758FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B010AB-CD7F-4034-8A4A-610259220461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B010AB-CD7F-4034-8A4A-610259220461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B010AB-CD7F-4034-8A4A-610259220461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B010AB-CD7F-4034-8A4A-610259220461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
