@@ -19,13 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Parallel - Processing m
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Parallel - Processing a for-Loop in parallel", "08. Parallel - Processing a for-Loop in parallel\08. Parallel - Processing a for-Loop in parallel.csproj", "{9D5E6B74-894E-400B-82E7-DDD87F42A722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Parallel - Setting a different step size for a parallel loop", "09. Parallel - Setting a different step size for a parallel loop\09. Parallel - Setting a different step size for a parallel loop.csproj", "{174177FF-69D6-473B-AF4E-277A8B328813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. Parallel - Setting a different step size for a parallel loop", "09. Parallel - Setting a different step size for a parallel loop\09. Parallel - Setting a different step size for a parallel loop.csproj", "{174177FF-69D6-473B-AF4E-277A8B328813}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Parallel - Cancelling a parallel for-loop", "10. Parallel - Cancelling a parallel for-loop\10. Parallel - Cancelling a parallel for-loop.csproj", "{222886D6-8539-4968-8675-41EB3BA2D34A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. Parallel - Cancelling a parallel for-loop", "10. Parallel - Cancelling a parallel for-loop\10. Parallel - Cancelling a parallel for-loop.csproj", "{222886D6-8539-4968-8675-41EB3BA2D34A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Parallel - Setting the degree of parallelism", "11. Setting the degree of parallelism\11. Parallel - Setting the degree of parallelism.csproj", "{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12. Parallel - Processing a foreach-loop in parallel", "12. Parallel - Processing a foreach-loop in parallel\12. Parallel - Processing a foreach-loop in parallel.csproj", "{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Parallel - Processing a foreach-loop in parallel", "12. Parallel - Processing a foreach-loop in parallel\12. Parallel - Processing a foreach-loop in parallel.csproj", "{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. Parallel - Setting the degree of parallelism", "11. Parallel - Setting the degree of parallelism\11. Parallel - Setting the degree of parallelism.csproj", "{4163E875-41D8-4AE4-90B9-9218B568E815}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. Async - Declaring an async task & method", "13. Async - Declaring an async task & method\13. Async - Declaring an async task & method.csproj", "{B7E1C70F-281E-4634-9203-1B060714DEEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,14 +75,18 @@ Global
 		{222886D6-8539-4968-8675-41EB3BA2D34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{222886D6-8539-4968-8675-41EB3BA2D34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{222886D6-8539-4968-8675-41EB3BA2D34A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4163E875-41D8-4AE4-90B9-9218B568E815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4163E875-41D8-4AE4-90B9-9218B568E815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4163E875-41D8-4AE4-90B9-9218B568E815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4163E875-41D8-4AE4-90B9-9218B568E815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
