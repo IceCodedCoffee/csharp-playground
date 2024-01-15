@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. Parallel - Setting the 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. Async - Declaring an async task & method", "13. Async - Declaring an async task & method\13. Async - Declaring an async task & method.csproj", "{B7E1C70F-281E-4634-9203-1B060714DEEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Async - Timing async operations", "14. Async - Timing async operations\14. Async - Timing async operations.csproj", "{C2A016C7-215A-4557-8EB9-35A0E2A2D635}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7E1C70F-281E-4634-9203-1B060714DEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
