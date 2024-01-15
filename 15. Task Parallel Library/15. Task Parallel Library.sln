@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Parallel - Setting a di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Parallel - Cancelling a parallel for-loop", "10. Parallel - Cancelling a parallel for-loop\10. Parallel - Cancelling a parallel for-loop.csproj", "{222886D6-8539-4968-8675-41EB3BA2D34A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Setting the degree of parallelism", "11. Setting the degree of parallelism\11. Setting the degree of parallelism.csproj", "{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Parallel - Setting the degree of parallelism", "11. Setting the degree of parallelism\11. Parallel - Setting the degree of parallelism.csproj", "{AB085C1D-F3BB-4CF5-AE32-DCDBC1B0F12E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Parallel - Processing a foreach-loop in parallel", "12. Parallel - Processing a foreach-loop in parallel\12. Parallel - Processing a foreach-loop in parallel.csproj", "{B371E2A0-F5FB-4E4C-8435-0317E8009E1C}"
 EndProject
