@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Tasks with return value", "02. Tasks with return value\02. Tasks with return value.csproj", "{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Passing data to a task", "03. Passing data to a task\03. Passing data to a task.csproj", "{F6778356-96D0-404F-8B92-66A6CBE9C870}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Waiting for the end of a task", "04. Waiting for the end of a task\04. Waiting for the end of a task.csproj", "{7D94A325-0AE3-496C-919D-F01127758FAA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Cancelling a task from outside", "05. Cancelling a task from outside\05. Cancelling a task from outside.csproj", "{C5B010AB-CD7F-4034-8A4A-610259220461}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Handling exceptions", "06. Handling exceptions\06. Handling exceptions.csproj", "{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Task - Instantiate a Task", "01. Task - Instantiate a Task\01. Task - Instantiate a Task.csproj", "{964D7326-821A-4FB9-A0AA-CE936E1F6148}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Task - Tasks with return value", "02. Task - Tasks with return value\02. Task - Tasks with return value.csproj", "{CBF7C88E-FA98-4DED-BCA4-EC458A6A406D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Task - Passing data to a task", "03. Task - Passing data to a task\03. Task - Passing data to a task.csproj", "{843241E4-DF3C-4A57-9479-7AFA7BF4EA73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Task - Waiting for the end of a task", "04. Task - Waiting for the end of a task\04. Task - Waiting for the end of a task.csproj", "{9D05EE64-3A84-404F-B062-8C73108F2C84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Task - Cancelling a task from outside", "05. Task - Cancelling a task from outside\05. Task - Cancelling a task from outside.csproj", "{CCBA06BA-1C32-4C95-96F1-D9884044DCE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Task - Handling exceptions", "06. Task - Handling exceptions\06. Task - Handling exceptions.csproj", "{862B5E89-2464-4431-8B82-6D1672F61F17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Parallel - Processing methods in parallel", "07. Parallel - Processing methods in parallel\07. Parallel - Processing methods in parallel.csproj", "{CB727B2C-D59F-4577-9C13-45C943647CA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,30 +23,34 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6778356-96D0-404F-8B92-66A6CBE9C870}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D94A325-0AE3-496C-919D-F01127758FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D94A325-0AE3-496C-919D-F01127758FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D94A325-0AE3-496C-919D-F01127758FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D94A325-0AE3-496C-919D-F01127758FAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5B010AB-CD7F-4034-8A4A-610259220461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5B010AB-CD7F-4034-8A4A-610259220461}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5B010AB-CD7F-4034-8A4A-610259220461}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5B010AB-CD7F-4034-8A4A-610259220461}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF7C88E-FA98-4DED-BCA4-EC458A6A406D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF7C88E-FA98-4DED-BCA4-EC458A6A406D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF7C88E-FA98-4DED-BCA4-EC458A6A406D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF7C88E-FA98-4DED-BCA4-EC458A6A406D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843241E4-DF3C-4A57-9479-7AFA7BF4EA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843241E4-DF3C-4A57-9479-7AFA7BF4EA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843241E4-DF3C-4A57-9479-7AFA7BF4EA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843241E4-DF3C-4A57-9479-7AFA7BF4EA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D05EE64-3A84-404F-B062-8C73108F2C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D05EE64-3A84-404F-B062-8C73108F2C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D05EE64-3A84-404F-B062-8C73108F2C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D05EE64-3A84-404F-B062-8C73108F2C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBA06BA-1C32-4C95-96F1-D9884044DCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBA06BA-1C32-4C95-96F1-D9884044DCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBA06BA-1C32-4C95-96F1-D9884044DCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBA06BA-1C32-4C95-96F1-D9884044DCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862B5E89-2464-4431-8B82-6D1672F61F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862B5E89-2464-4431-8B82-6D1672F61F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862B5E89-2464-4431-8B82-6D1672F61F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862B5E89-2464-4431-8B82-6D1672F61F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB727B2C-D59F-4577-9C13-45C943647CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB727B2C-D59F-4577-9C13-45C943647CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB727B2C-D59F-4577-9C13-45C943647CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB727B2C-D59F-4577-9C13-45C943647CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
