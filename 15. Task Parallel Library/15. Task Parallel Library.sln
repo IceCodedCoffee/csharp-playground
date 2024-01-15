@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Instantiate a Task", "01. Instantiate a Task\01. Instantiate a Task.csproj", "{5DA3C74C-2CE0-4D7B-BB42-F9991B7FCCE0}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Tasks with return value", "02. Tasks with return value\02. Tasks with return value.csproj", "{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Passing data to a task", "03. Passing data to a task\03. Passing data to a task.csproj", "{F6778356-96D0-404F-8B92-66A6CBE9C870}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Passing data to a task", "03. Passing data to a task\03. Passing data to a task.csproj", "{F6778356-96D0-404F-8B92-66A6CBE9C870}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Waiting for the end of a task", "04. Waiting for the end of a task\04. Waiting for the end of a task.csproj", "{7D94A325-0AE3-496C-919D-F01127758FAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Waiting for the end of a task", "04. Waiting for the end of a task\04. Waiting for the end of a task.csproj", "{7D94A325-0AE3-496C-919D-F01127758FAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Cancelling a task from outside", "05. Cancelling a task from outside\05. Cancelling a task from outside.csproj", "{C5B010AB-CD7F-4034-8A4A-610259220461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Cancelling a task from outside", "05. Cancelling a task from outside\05. Cancelling a task from outside.csproj", "{C5B010AB-CD7F-4034-8A4A-610259220461}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Handling exceptions", "06. Handling exceptions\06. Handling exceptions.csproj", "{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Handling exceptions", "06. Handling exceptions\06. Handling exceptions.csproj", "{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Task - Instantiate a Task", "01. Task - Instantiate a Task\01. Task - Instantiate a Task.csproj", "{964D7326-821A-4FB9-A0AA-CE936E1F6148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DA3C74C-2CE0-4D7B-BB42-F9991B7FCCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DA3C74C-2CE0-4D7B-BB42-F9991B7FCCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DA3C74C-2CE0-4D7B-BB42-F9991B7FCCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DA3C74C-2CE0-4D7B-BB42-F9991B7FCCE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F4A5017-DC9B-430A-8BEB-4874CFAA4439}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B9C85E-3FB6-42EC-8EE5-EAB3EDC702C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964D7326-821A-4FB9-A0AA-CE936E1F6148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
