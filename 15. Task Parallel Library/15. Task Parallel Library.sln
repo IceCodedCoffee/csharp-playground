@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. Async - Declaring an as
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Async - Timing async operations", "14. Async - Timing async operations\14. Async - Timing async operations.csproj", "{C2A016C7-215A-4557-8EB9-35A0E2A2D635}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Async - Async operations with return values", "15. Async - Async operations with return values\15. Async - Async operations with return values.csproj", "{BC021797-F58E-4A85-9147-9908A450772C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2A016C7-215A-4557-8EB9-35A0E2A2D635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC021797-F58E-4A85-9147-9908A450772C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC021797-F58E-4A85-9147-9908A450772C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC021797-F58E-4A85-9147-9908A450772C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC021797-F58E-4A85-9147-9908A450772C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
