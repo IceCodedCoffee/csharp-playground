@@ -1,214 +1,143 @@
 ﻿
-// Creating an instance of DirectoryInfo, which does not mean that the folder actually exists, neither does it get created automatically
-using System.Diagnostics;
+// BaseFunctionalities();
 
-DirectoryInfo folder = new(@"D:\Backup\Bananas");
-
-
-// Getting the fully qualified path of a directory
-string pathToFolder = folder.FullName;
-
-Debug.WriteLine(pathToFolder + "\n");
-//alternative:
-Debug.WriteLine($"{folder}");
+TestIOHelper();
 
 
-// Getting the name of a directory
-string nameOfFolder = folder.Name;
-
-Debug.WriteLine(nameOfFolder + "\n");
-
-
-// Creating a folder
-try
+void BaseFunctionalities()
 {
-    folder.Create();
-}
-catch (Exception ex)
-{
-    Debug.WriteLine($"Could not create folder. Exception: {ex.Message}");
-}
+    // Creating an instance of DirectoryInfo,
+    // which does not mean that the folder actually exists,
+    // neither does it get created automatically
+    DirectoryInfo folder = new(@"D:\Backup\Bananas");
+    DirectoryInfo folder2 = new(@"D:\Minions");
 
+    Console.WriteLine("---");
+    Console.WriteLine($"The fully qualified name of the folder: {folder.FullName}");
+    Console.WriteLine($"The fully qualified name of the folder: {folder}");
+    Console.WriteLine($"The name of just the folder: {folder.Name}");
+    Console.WriteLine($"The name of the parent folder of the folder: {folder.Parent}");
+    Console.WriteLine($"The name of the root of the folder: {folder.Root}");
 
-// Getting the attributes of a folder, if folder/file not exists -1
-// if only "Directory" it has no other attributes
-FileAttributes attributesOfFolder = folder.Attributes;
-
-Debug.WriteLine(attributesOfFolder + "\n");
-
-
-// Setting the attribute to hidden
-attributesOfFolder = folder.Attributes |= FileAttributes.Hidden;
-
-Debug.WriteLine(attributesOfFolder + "\n");
-
-
-// Check if a folder is hidden
-// bitwise AND Operation with the .Hidden enum value
-if ((folder.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden)
-{
-    Debug.WriteLine($"The folder {folder.Name} is hidden.");
-}
-
-
-// Unhide a folder
-folder.Attributes &= ~FileAttributes.Hidden;
-
-if ((folder.Attributes & FileAttributes.Hidden) != FileAttributes.Hidden)
-{
-    Debug.WriteLine($"The folder {folder.Name} is not hidden.");
-}
-
-
-// analogues for other attributs like ReadOnly, ...
-
-
-// Check if a folder exists
-string value = folder.Exists ? "does" : "does not";
-
-Debug.WriteLine($"The folder {value} exist.");
-
-
-// Delete a folder, if not empty, otherwise exception after 1 secs
-try
-{
-    folder.Delete();
-}
-catch (Exception ex)
-{
-    Debug.WriteLine($"Could not delete folder {folder.FullName}. Folder is not empty: {ex.Message}");
-}
-// Check again if a folder exists
-value = folder.Exists ? "does" : "does not";
-
-Debug.WriteLine($"The folder {value} exist.");
-
-
-// Delete a folder recursively, even if not empty!
-// Be very careful with this, and implement user-interaction for safety
-DirectoryInfo newFolder = new($@"D:\Backup2\Bananas2\Minions2");
-newFolder.Create();
-
-try
-{
-    newFolder.Parent.Delete(true);
-}
-catch (Exception ex)
-{
-    Debug.WriteLine($"Could not delete folder {folder.FullName}. Exception: {ex.Message}");
-}
-
-value = newFolder.Exists ? "does" : "does not";
-
-Debug.WriteLine($"The folder {newFolder} exist.");
-
-
-// Get the parent folder of the folder
-folder.Create();
-
-DirectoryInfo? parentFolder = folder.Parent;
-
-Debug.WriteLine($"This is the parent folder of the folder: {parentFolder}.");
-
-
-// Get the root part of the folder path
-DirectoryInfo rootPart = folder.Root;
-
-Debug.WriteLine($"This is the root part of the folder: {rootPart}.");
-
-
-// Get / Set the creation time of the folder
-DateTime creationTime = folder.CreationTime;
-
-Debug.WriteLine($"The creation time of the folder is: {creationTime}.");
-
-folder.CreationTime = new DateTime(1981, 02, 11);
-
-creationTime = folder.CreationTime;
-
-Debug.WriteLine($"The NEW creation time of the folder is: {creationTime}.");
-
-
-// Get / Set the last access time of the folder
-// accesstime only changes when there are really accesses happening to the folder
-DateTime lastAccessTime = folder.LastAccessTime;
-
-Debug.WriteLine($"The lastAccessTime of the folder is: {lastAccessTime}.");
-
-folder.LastAccessTime = new DateTime(1981, 02, 11);
-
-lastAccessTime = folder.LastAccessTime;
-
-Debug.WriteLine($"The NEW lastAccessTime of the folder is: {lastAccessTime}.");
-
-
-// analogous for LastWriteTime
-
-
-// Get the array of subdirectories if present
-DirectoryInfo newSubDirectory = new(@"D:\Backup\Bananas\Minions");
-newSubDirectory.Create();
-
-DirectoryInfo[] subDirectories = folder.GetDirectories();
-
-foreach (DirectoryInfo subDirectory in subDirectories)
-{
-    Debug.WriteLine($"This is a subdirectory {subDirectory}.");
-}
-
-
-// Move a folder, do only with try-catch
-// MoveTo needs the full path of the destination folder including its own name, not only its parents path
-// Syntax variants to get the full destination path
-string oldPath = $@"D:\{folder.Name}\{newSubDirectory.Name}";
-
-string test1 = $@"D:\{folder.Parent.Name}\{newSubDirectory.Name}";
-string test2 = $@"{folder.Parent.FullName}\{newSubDirectory.Name}";
-string test3 = Path.Combine(folder.Parent.FullName, newSubDirectory.Name);
-Debug.WriteLine(test1);
-Debug.WriteLine(test2);
-Debug.WriteLine(test3);
-try
-{
-    newSubDirectory.MoveTo(test1);
-    Debug.WriteLine($"Folder '{newSubDirectory.Name}' moved from '{oldPath}' to '{newSubDirectory.Parent.FullName}'");
-}
-catch (Exception ex)
-{
-    Debug.WriteLine($"Could not move folder {test1}: {ex.Message}");
-}
-
-
-// Get all subdirectories as enumerable
-IEnumerable<DirectoryInfo> subdirectories = folder.Parent.EnumerateDirectories();
-
-foreach (DirectoryInfo subDirectory in subdirectories)
-{
-    Debug.WriteLine($"This is the subdirectory {subDirectory.Name} of: {folder.Parent}");
-}
-
-
-// Refreshing the state of the folder objects information
-folder.Refresh();
-
-
-// Clean up after testing
-Debug.WriteLine($"Do you want to delete all created folders recursivly? Y/n ?\n");
-string deleteChoice = Console.ReadLine();
-
-if (deleteChoice == "Y")
-{
+    Console.WriteLine("---");
+    Console.WriteLine($"Checks if the folder actually exist: {folder.Exists}");
+    // Actually creating the folder
     try
     {
-        folder.Parent.Delete(true);
-        newFolder.Parent.Parent.Delete(true);
+        folder.Create();
+        folder2.Create();
+        Console.WriteLine($"Folder {folder} created!");
     }
     catch (Exception ex)
     {
-        Debug.WriteLine($"Could not delete folder. Exception: {ex.Message}");
+        Console.WriteLine($"Could not create folder. Exception: {ex.Message}");
     }
+    // Refresh the information about the folder
+    folder.Refresh();
+    Console.WriteLine($"Checks if the folder actually exist: {folder.Exists}");
+
+    Console.WriteLine("---");
+    Console.WriteLine($"The creation time of the folder: {folder.CreationTime}.");
+    folder.CreationTime = new DateTime(1981, 02, 11);
+    Console.WriteLine($"The changed creation time of the folder: {folder.CreationTime}.");
+    Console.WriteLine($"The lastAccessTime of the folder: {folder.LastAccessTime}.");
+    folder.LastAccessTime = new DateTime(1981, 02, 11);
+    Console.WriteLine($"The changed lastAccessTime of the folder: {folder.LastAccessTime}.");
+    // analog for LastWriteTime
+
+    Console.WriteLine("---");
+    Console.WriteLine($"The folders attributes: {folder.Attributes}");
+    // bitwise OR Operation with the .Hidden enum value
+    Console.WriteLine($"Setting the folder attribute to hidden: {folder.Attributes |= FileAttributes.Hidden}");
+    Console.WriteLine($"The folder attributes: {folder.Attributes}");
+    // bitwise AND Operation with the .Hidden enum value
+    Console.WriteLine($"Checks if the folder is hidden: {(folder.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden}");
+    Console.WriteLine($"Unhides the folder: {folder.Attributes &= ~FileAttributes.Hidden}");
+    Console.WriteLine($"Checks if the folder is hidden: {(folder.Attributes & FileAttributes.Hidden) == FileAttributes.Hidden}");
+    // analog for other attributs like ReadOnly, ...
+
+    Console.WriteLine("---");
+    foreach (DirectoryInfo subDirectory in folder.Parent.GetDirectories())
+    {
+        Console.WriteLine($"This is a folder from the ARRAY of subdirectories {subDirectory}.");
+    }
+    foreach (DirectoryInfo subDirectory in folder.Parent.EnumerateDirectories())
+    {
+        Console.WriteLine($"This is a folder is from the ENUMERATION of subdirectories {subDirectory}.");
+    }
+
+    Console.WriteLine("---");
+    // Move a folder
+    // MoveTo needs the full path of the destination folder including its own name, not only its parents path
+    // Syntax variants to get the full destination path
+    string syntaxVariant1 = $@"D:\{folder2.Name}\{folder.Name}";
+    string syntaxVariant2 = $@"{folder2.FullName}\{folder.Name}";
+    string syntaxVariant3 = Path.Combine(folder2.Parent.FullName, folder.Name);
+    Console.WriteLine(syntaxVariant1);
+    Console.WriteLine(syntaxVariant2);
+    Console.WriteLine(syntaxVariant3);
+    try
+    {
+        folder.MoveTo(syntaxVariant1);
+        Console.WriteLine($@"Moved folder \{folder.Name} to {folder2}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Could not move folder {folder}: {ex.Message}");
+    }
+
+    Console.WriteLine("---");
+    // Delete a folder, if not empty, otherwise exception after 1 secs
+    try
+    {
+        //folder.Delete();
+        //Console.WriteLine($@"Folder: \{folder.Name} deleted!");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Could not delete folder {folder}. Folder is not empty: {ex.Message}");
+    }
+    Console.WriteLine($"Checks if the folder actually exist: {folder.Exists}");
+
+    Console.WriteLine("---");
+    Console.WriteLine($"Do you want to delete all created folders? Y/n ?\n");
+    string deleteChoice = Console.ReadLine();
+
+    if (deleteChoice == "Y")
+    {
+        try
+        {
+            folder.Parent.Delete();
+            folder2.Delete();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Could not delete folder(s). Exception: {ex.Message}");
+        }
+    }
+
+    // Delete a folder recursively, even if not empty!
+    // Be very careful with this and implement user-interaction for safety
+    /*
+    try
+    {
+        // folder.Delete(true);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Could not delete folder { folder }. Exception: { ex.Message }");
+    }
+    Console.WriteLine($"Checks if the folder actually exist: {folder.Exists}");
+    */
 }
-else
+
+void TestIOHelper()
 {
-    return;
+    // Testing the IOHelper class
+    DirectoryInfo testDirectory = new($@"D:\Test");
+    FolderHelper.TryExecute(() => testDirectory.Create());
+
+    IEnumerable<DirectoryInfo> testABC = FolderHelper.TryExecute<IEnumerable<DirectoryInfo>>(() => testDirectory.GetDirectories());
+
+    UIHelper.UserConfirmFolderDeletion(testDirectory);
 }

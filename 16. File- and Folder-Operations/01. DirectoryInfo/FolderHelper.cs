@@ -1,7 +1,7 @@
-﻿public static class IOHelper
+﻿public static class FolderHelper
 {
     // For actions that return a value
-    public static T TryExecute<T>(Func<T> func, T fallbackValue)
+    public static T TryExecute<T>(Func<T> func)
     {
         try
         {
@@ -11,13 +11,13 @@
         {
             // Handle IO-specific exceptions here
             Console.WriteLine($"IOException occurred: {ex.Message}");
-            return fallbackValue;
+            return default;
         }
         catch (Exception ex)
         {
             // Handle general exceptions if necessary
             Console.WriteLine($"Exception occurred: {ex.Message}");
-            return fallbackValue;
+            return default;
         }
     }
 
